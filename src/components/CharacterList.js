@@ -9,7 +9,6 @@ export default function CharacterList() {
     const getAllCharacters = () => {
       rickAndMorty.getAllCharacters()
       .then(response => {
-        console.log(response.data.results)
         setCharacters(response.data.results)
       })
       .catch(error => {
