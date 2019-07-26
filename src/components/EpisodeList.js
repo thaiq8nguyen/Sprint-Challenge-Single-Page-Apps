@@ -9,7 +9,7 @@ const EpisodeList = () => {
         const getAllEpisodes = () => {
             rickAndMorty.getAllEpisodes()
             .then(response => {
-                console.log(response.data.results)
+                
                 setEpisodes(response.data.results)
             })
             .catch(errors => {

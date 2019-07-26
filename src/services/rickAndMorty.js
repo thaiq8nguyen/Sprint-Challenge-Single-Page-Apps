@@ -13,5 +13,10 @@ export default {
     },
     getAllEpisodes() {
         return client.get("/episode");
+    },
+    getCharacter(characterName) {
+        return client.get("/character/?name="+characterName);
     }
+
+
 }
