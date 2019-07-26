@@ -1,7 +1,11 @@
 import React from 'react';
 
 export default function Header() {
-  return <header className="ui centered">
-    <h1 className="ui center">Rick &amp; Morty Fan Page</h1>
-  </header>
+  return (
+    <nav className="navbar is-info">
+      <div className="navbar-brand">
+        <h1 className="navbar-item is-size-4">Rick & Morty Fan Page</h1>
+      </div>
+    </nav>
+  )
 }
